@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfilePic from './ProfilePic';
+import ProfileMenu from './ProfileMenu';
 import './style.css';
 
 function Profile() {
@@ -20,6 +21,7 @@ function Profile() {
             </div>
           </div>
           <ProfilePic />
+          <ProfileMenu />
         </div>
       </div>
     </div>

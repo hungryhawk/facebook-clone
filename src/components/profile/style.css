@@ -65,67 +65,67 @@
 /* profile pic  */
 
 .profile_img_wrap {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    margin-bottom: -2.8rem;
-  }
-  
-  .profile_w_left {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 13px 0 13px;
-  }
-  
-  .profile_w_img {
-    position: relative;
-  }
-  
-  .profile_w_bg {
-    transform: translateY(-3.6rem);
-    border: 2px solid white;
-    background: white;
-    cursor: pointer;
-  }
-  
-  .profile_circle {
-    position: absolute;
-    bottom: 4.5rem;
-    right: 0.55rem;
-    background: #e4e6eb;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-  }
-  
-  .profile_name {
-    font-weight: 700;
-    font-size: 32px;
-  }
-  
-  .profile_w_right {
-    display: flex;
-    /* flex-direction: column; */
-    gap: 8px;
-    padding: 0 10px;
-    margin-bottom: 7px;
-  }
-  
-  .invert {
-    filter: invert(100%);
-  }
-  
-  .profile_friend_imgs img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-top: 10px;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-bottom: -2.8rem;
+}
+
+.profile_w_left {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 13px 0 13px;
+}
+
+.profile_w_img {
+  position: relative;
+}
+
+.profile_w_bg {
+  transform: translateY(-3.6rem);
+  border: 2px solid white;
+  background: white;
+  cursor: pointer;
+}
+
+.profile_circle {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 0.55rem;
+  background: #e4e6eb;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.profile_name {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.profile_w_right {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 8px;
+  padding: 0 10px;
+  margin-bottom: 7px;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.profile_friend_imgs img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
 
 .edit_icon {
   background-image: url('../../../public/icons/icons18.png');
@@ -158,7 +158,7 @@
 .gray_btn {
   border: none;
   outline: none;
-  background:#f0f2f5;
+  background: #f0f2f5;
   padding: 8.5px 12px;
   border-radius: 7px;
   font-family: inherit;
@@ -174,3 +174,53 @@
 
 /* -------------------- */
 
+/* profile menu  */
+
+.profile_menu_wrap {
+  position: relative;
+  padding: 0 2.2rem;
+}
+
+.profile_menu {
+  position: relative;
+  border-top: 1px solid #ccced2;
+  display: flex;
+  padding: 0;
+}
+
+.profile_menu a {
+  height: 54px;
+  width: 78.5px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border-radius: 10px;
+  margin: 3px 0;
+  color: #65676b;
+}
+
+.p10_dots {
+  background: #e4e6eb;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  border-radius: 5px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  place-items: center;
+  padding: 8px 14px;
+}
+
+.p10_dots svg {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* ------------------- */
