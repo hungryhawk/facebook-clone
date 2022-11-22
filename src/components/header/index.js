@@ -1,5 +1,6 @@
 import './style.css';
 import HeaderLeft from './HeaderLeft';
+import HeaderMiddle from './HeaderMiddle';
 
 export default function Header() {
   const color = 'gray';
@@ -7,6 +8,7 @@ export default function Header() {
   return (
     <header>
       <HeaderLeft color={color} />
+      <HeaderMiddle color={color} />
     </header>
   );
 }
