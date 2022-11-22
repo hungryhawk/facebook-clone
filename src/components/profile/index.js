@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePic from './ProfilePic';
 import './style.css';
 
 function Profile() {
@@ -18,7 +19,7 @@ function Profile() {
               </div>
             </div>
           </div>
-      {/* --------------- */}
+          <ProfilePic />
         </div>
       </div>
     </div>
