@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './style.css';
-import HomeActive from './../../svg/homeActive'
-import Friends from './../../svg/friends'
-import Watch from './../../svg/watch'
-import Market from './../../svg/market'
-import GroupPeople from './../../svg/groupPeople'
+import HomeActive from '../../../svg/homeActive'
+import Friends from '../../../svg/friends'
+import Watch from '../../../svg/watch'
+import Market from '../../../svg/market'
+import GroupPeople from '../../../svg/groupPeople'
 
 
 function HeaderMiddle({ color }) {

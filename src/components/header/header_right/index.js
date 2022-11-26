@@ -1,9 +1,9 @@
 import './style.css';
 import React from 'react';
 import { Avatar } from '@mui/material';
-import Menu from './../../svg/menu';
-import Messenger from './../../svg/messenger';
-import Notifications from './../../svg/notifications';
+import Menu from '../../../svg/menu';
+import Messenger from '../../../svg/messenger';
+import Notifications from '../../../svg/notifications';
 
 function HeaderRight({ avatarUrl, avatar, setAvatar }) {
   React.useEffect(() => {

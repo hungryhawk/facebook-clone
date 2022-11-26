@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/header';
 import Profile from './components/profile';
-import { user } from './../src/components/data/userInformation';
+import { user } from './data/userInformation';
 
 function App() {
   const [avatar, setAvatar] = React.useState([]);

@@ -1,10 +1,18 @@
 import React from 'react';
-import ProfilePic from './ProfilePic';
-import ProfileMenu from './ProfileMenu';
+import ProfilePic from './profile_pic';
+import ProfileMenu from './profile_menu';
 import './style.css';
 
-function Profile({ backImg, avatarUrl, userName, friends, profile, setProfile, avatar, setAvatar}) {
-
+function Profile({
+  backImg,
+  avatarUrl,
+  userName,
+  friends,
+  profile,
+  setProfile,
+  avatar,
+  setAvatar,
+}) {
   React.useEffect(() => {
     setTimeout(() => {
       setProfile(backImg);
@@ -16,10 +24,7 @@ function Profile({ backImg, avatarUrl, userName, friends, profile, setProfile, a
       <div className="profile_top">
         <div className="profile_container">
           <div className="profile_cover">
-            <img
-              src={profile}
-              alt=""
-            />
+            <img src={profile} alt="" />
             <div className="update_cover_wrapper">
               <div className="open_cover_update">
                 <i className="camera_filled_icon"></i>
@@ -27,7 +32,13 @@ function Profile({ backImg, avatarUrl, userName, friends, profile, setProfile, a
               </div>
             </div>
           </div>
-          <ProfilePic avatarUrl={avatarUrl} userName={userName} friends={friends} avatar={avatar} setAvatar={setAvatar}/>
+          <ProfilePic
+            avatarUrl={avatarUrl}
+            userName={userName}
+            friends={friends}
+            avatar={avatar}
+            setAvatar={setAvatar}
+          />
           <ProfileMenu />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import './style.css';
-import Dots from '../../../src/svg/dots';
+import Dots from '../../../svg/dots';
 import { useState } from 'react';
 
 const words = [
