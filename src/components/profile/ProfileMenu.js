@@ -9,7 +9,7 @@ const words = [
   'Photos',
   'Videos',
   'Check-ins',
-  'More',
+  'More ▾',
 ];
 
 export default function ProfileMenu() {
