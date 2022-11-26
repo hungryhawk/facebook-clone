@@ -2,7 +2,15 @@ import './style.css';
 import Dots from '../../../src/svg/dots';
 import { useState } from 'react';
 
-const words = ['Posts', 'About', 'Friends', 'Photo', 'Videos', 'More'];
+const words = [
+  'Posts',
+  'About',
+  'Friends',
+  'Photos',
+  'Videos',
+  'Check-ins',
+  'More',
+];
 
 export default function ProfileMenu() {
   const [selected, setSelected] = useState(null);
