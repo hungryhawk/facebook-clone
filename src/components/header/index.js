@@ -3,14 +3,14 @@ import HeaderLeft from './HeaderLeft';
 import HeaderMiddle from './HeaderMiddle';
 import HeaderRight from './HeaderRight';
 
-export default function Header() {
+export default function Header({avatarUrl, avatar, setAvatar}) {
   const color = 'gray';
 
   return (
     <header>
       <HeaderLeft color={color} />
       <HeaderMiddle color={color} />
-      <HeaderRight />
+      <HeaderRight avatarUrl={avatarUrl} avatar={avatar} setAvatar={setAvatar}/>
     </header>
   );
 }

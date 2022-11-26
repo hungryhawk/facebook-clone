@@ -120,6 +120,11 @@
   filter: invert(100%);
 }
 
+.profile_friends {
+  font-weight: 600;
+  color: gray
+}
+
 .profile_friend_imgs img {
   width: 32px;
   height: 32px;

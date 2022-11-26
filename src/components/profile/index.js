@@ -3,14 +3,21 @@ import ProfilePic from './ProfilePic';
 import ProfileMenu from './ProfileMenu';
 import './style.css';
 
-function Profile() {
+function Profile({ backImg, avatarUrl, userName, friends, profile, setProfile, avatar, setAvatar}) {
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setProfile(backImg);
+    }, 1000);
+  }, []);
+
   return (
     <div className="profile">
       <div className="profile_top">
         <div className="profile_container">
           <div className="profile_cover">
             <img
-              src="https://images.pexels.com/photos/13270850/pexels-photo-13270850.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              src={profile}
               alt=""
             />
             <div className="update_cover_wrapper">
@@ -20,7 +27,7 @@ function Profile() {
               </div>
             </div>
           </div>
-          <ProfilePic />
+          <ProfilePic avatarUrl={avatarUrl} userName={userName} friends={friends} avatar={avatar} setAvatar={setAvatar}/>
           <ProfileMenu />
         </div>
       </div>

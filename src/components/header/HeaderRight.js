@@ -1,12 +1,16 @@
 import './style.css';
 import React from 'react';
 import { Avatar } from '@mui/material';
-import Menu from './../../svg/menu'
-import Messenger from './../../svg/messenger'
-import Notifications from './../../svg/notifications'
+import Menu from './../../svg/menu';
+import Messenger from './../../svg/messenger';
+import Notifications from './../../svg/notifications';
 
-
-function HeaderRight() {
+function HeaderRight({ avatarUrl, avatar, setAvatar }) {
+  React.useEffect(() => {
+    setTimeout(() => {
+      setAvatar(avatarUrl);
+    }, 1000);
+  }, []);
   return (
     <div className="header_right">
       <div className="circle_icon hover1">
@@ -19,10 +23,10 @@ function HeaderRight() {
         <Notifications />
       </div>
       <div className="circle_icon hover1">
-        <Avatar/>
+        <Avatar src={avatar} />
       </div>
     </div>
   );
 }
 
-export default HeaderRight
+export default HeaderRight;
