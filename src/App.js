@@ -5,7 +5,6 @@ import { user } from './data/userInformation';
 
 function App() {
   const [avatar, setAvatar] = React.useState([]);
-  const [profile, setProfile] = React.useState([]);
 
   return (
     <>
@@ -23,11 +22,9 @@ function App() {
           backImg={member.backImg}
           avatarUrl={member.avatarUrl}
           userName={member.userName}
-          friends={member.friends}
           avatar={avatar}
           setAvatar={setAvatar}
-          profile={profile}
-          setProfile={setProfile}
+         
         />
       ))}
     </>

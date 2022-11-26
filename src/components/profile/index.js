@@ -7,12 +7,11 @@ function Profile({
   backImg,
   avatarUrl,
   userName,
-  friends,
-  profile,
-  setProfile,
   avatar,
   setAvatar,
 }) {
+  const [profile, setProfile] = React.useState(null);
+
   React.useEffect(() => {
     setTimeout(() => {
       setProfile(backImg);
@@ -35,7 +34,6 @@ function Profile({
           <ProfilePic
             avatarUrl={avatarUrl}
             userName={userName}
-            friends={friends}
             avatar={avatar}
             setAvatar={setAvatar}
           />

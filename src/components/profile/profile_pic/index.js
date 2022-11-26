@@ -1,19 +1,24 @@
 import './style.css';
 import React from 'react';
 import { Avatar } from '@mui/material';
+import { friends } from '../../../data/userInformation';
 
-export default function ProfilePic({avatarUrl, userName, friends, avatar, setAvatar}) {
+export default function ProfilePic({
+  avatarUrl,
+  userName,
+  avatar,
+  setAvatar,
+}) {
   const [img, setImg] = React.useState([]);
-  const [profile, setProfile] = React.useState(null);
+  const [name, setName] = React.useState(null);
 
   React.useEffect(() => {
     setTimeout(() => {
       setImg(friends);
-      setProfile(userName);
-      setAvatar(avatarUrl)
+      setName(userName);
+      setAvatar(avatarUrl);
     }, 2000);
   }, []);
-
 
   return (
     <div className="profile_img_wrap">
@@ -29,13 +34,13 @@ export default function ProfilePic({avatarUrl, userName, friends, avatar, setAva
           </div>
         </div>
         <div className="profile_w_col">
-          <div className="profile_name">{profile}</div>
+          <div className="profile_name">{name}</div>
           <div className="profile_friends">{img.length} Friends</div>
           <div className="profile_friend_imgs">
             {img.map((pic, i) => (
               <img
-                src={pic}
-                key={i}
+                src={pic.photo}
+                key={i.id}
                 alt=""
                 style={{
                   transform: `translateX(${-i * 7}px)`,
