@@ -3,6 +3,7 @@
 .header_right {
     display: flex;
     align-items: center;
+    /* TODO: remove pos absolute */
     position: absolute;
     right: 8px;
     top: 50%;
