@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from '../../header';
-import LeftHome from '../../header/leftHome';
-import Profile from '../../profile';
-import { user } from '../../../data/userInformation';
-import useFetch from '../../../helpers/useFetch';
+import Header from '../../components/header';
+import LeftHome from '../../components/header/leftHome';
+import Profile from '../../components/profile';
+import { user } from '../../data/userInformation';
+import useFetch from '../../helpers/useFetch';
 
 export default function Home() {
   const info = useFetch(user);
