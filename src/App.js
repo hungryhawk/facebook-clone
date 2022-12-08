@@ -1,32 +1,16 @@
 import React from 'react';
 import Header from './components/header';
 import Profile from './components/profile';
-import { user } from './data/userInformation';
+import {user}  from './data/userInformation';
+import useFetch from './helpers/useFetch';
 
 function App() {
-  const [avatar, setAvatar] = React.useState([]);
+  const info = useFetch(user);
 
   return (
     <>
-      {user.map((member) => (
-        <Header
-          key={member.id}
-          avatarUrl={member.avatarUrl}
-          avatar={avatar}
-          setAvatar={setAvatar}
-        />
-      ))}
-      {user.map((member) => (
-        <Profile
-          key={member.id}
-          backImg={member.backImg}
-          avatarUrl={member.avatarUrl}
-          userName={member.userName}
-          avatar={avatar}
-          setAvatar={setAvatar}
-         
-        />
-      ))}
+      <Header user={info} />
+      <Profile user={info} />
     </>
   );
 }

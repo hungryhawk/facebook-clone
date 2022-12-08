@@ -5,12 +5,8 @@ import Menu from '../../../svg/menu';
 import Messenger from '../../../svg/messenger';
 import Notifications from '../../../svg/notifications';
 
-function HeaderRight({ avatarUrl, avatar, setAvatar }) {
-  React.useEffect(() => {
-    setTimeout(() => {
-      setAvatar(avatarUrl);
-    }, 1000);
-  }, []);
+function HeaderRight({user}) {
+
   return (
     <div className="header_right">
       <div className="circle_icon hover1">
@@ -23,7 +19,7 @@ function HeaderRight({ avatarUrl, avatar, setAvatar }) {
         <Notifications />
       </div>
       <div className="circle_icon hover1">
-        <Avatar src={avatar} />
+        <Avatar src={user.avatarUrl} />
       </div>
     </div>
   );
