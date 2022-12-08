@@ -1,12 +1,14 @@
 import { useEffect, useState, useRef } from 'react';
 import Return from '../../../svg/return';
 import Search from '../../../svg/search';
+import useClickOutside from './useClickOutside';
 import './style.css';
 
 function SearchMenu({ setShowSearchMenu }) {
   const [iconVisible, setIconVisible] = useState(true);
   const color = 'gray';
   const input = useRef(null);
+
   
 
   useEffect(() => {
