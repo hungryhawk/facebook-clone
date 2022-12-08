@@ -5,7 +5,7 @@ export default function useFetch(data) {
   useEffect(() => {
     setTimeout(() => {
       setInfo(data);
-    }, 3000);
+    }, 2000);
   }, []);
   return info;
 }

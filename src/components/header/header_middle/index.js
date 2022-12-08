@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import './style.css';
-import HomeActive from '../../../svg/homeActive'
-import Friends from '../../../svg/friends'
-import Watch from '../../../svg/watch'
-import Market from '../../../svg/market'
-import GroupPeople from '../../../svg/groupPeople'
-import ThreeLines from '../../../svg/threelines'
+import HomeActive from '../../../svg/homeActive';
+import Friends from '../../../svg/friends';
+import Watch from '../../../svg/watch';
+import Market from '../../../svg/market';
+import GroupPeople from '../../../svg/groupPeople';
+import ThreeLines from '../../../svg/threelines';
 
-
-function HeaderMiddle({ color }) {
+function HeaderMiddle({ color, setShow }) {
   const icons = [
     { name: <HomeActive />, id: 1, tooltip: 'Home' },
     { name: <Friends color={color} />, id: 2, tooltip: 'Friends' },
@@ -18,24 +17,27 @@ function HeaderMiddle({ color }) {
     { name: <ThreeLines color={color} />, id: 6, tooltip: 'Menu' },
   ];
 
-  const [selected, setSelected] = useState();
+  const [selected, setSelected] = useState(false);
 
   return (
-    <div className="header_middle">
-      {icons.map((icon) => (
-        <div
-          className={`middle_icon hover1 ${
-            selected === icon.id ? 'active' : ''
-          }`}
-          onClick={() => setSelected(icon.id)}
-        >
-          <div class="tooltip">
-            <span class="tooltiptext">{icon.tooltip}</span>
-            {icon.name}
+    
+      <div className="header_middle">
+        {icons.map((icon) => (
+          <div
+            className={`middle_icon hover1 ${
+              selected === icon.id ? 'active' : ''
+            }`}
+            onClick={() => setSelected(icon.id)}
+          >
+            <div class="tooltip">
+              <span class="tooltiptext">{icon.tooltip}</span>
+              {icon.name}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+     
+  
   );
 }
 

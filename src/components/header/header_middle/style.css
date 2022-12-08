@@ -59,6 +59,10 @@
   display: none;
 }
 
+.three {
+  display: none;
+}
+
 /* ----------------- */
 
 /* @media (max-width: 1150px) {
@@ -138,3 +142,5 @@
     display: none;
   }
 }
+
+

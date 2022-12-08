@@ -1,0 +1,39 @@
+.left_home {
+  position: fixed;
+  margin-top: 58px;
+  left: 6px;
+  max-height: 100vh;
+  /* max-width: 400px; */
+  overflow-y: auto;
+  color: black;
+  padding: 15px 0;
+}
+
+.left_link {
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  padding: 8px 13px;
+  border-radius: 10px !important;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.left_link img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 11px;
+  object-fit: cover;
+}
+
+.left_link span {
+  margin-bottom: 4px;
+  margin-left: 1px;
+}
+
+.rotate360 {
+  transform: rotate(180deg);
+}

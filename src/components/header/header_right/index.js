@@ -5,13 +5,13 @@ import Messenger from '../../../svg/messenger';
 import Notifications from '../../../svg/notifications';
 import Plus from '../../../svg/plus';
 
-function HeaderRight({ user }) {
+function HeaderRight({ user, setShow }) {
   return (
     <div className="header_right">
-      <div className="circle_icon hover1">
+      <div className="circle_icon hover1" onClick={() => setShow(prev => !prev)}>
         <Plus />
       </div>
-      <div className="circle_icon hover1">
+      <div className="circle_icon hover1" onClick={() => setShow(prev => !prev)}>
         <Menu />
       </div>
       <div className="circle_icon hover1">
