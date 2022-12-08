@@ -49,3 +49,13 @@
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+@media (max-width: 900px) {
+  .open_cover_update {
+    width: 50px;
+    height: 38px;
+    padding: 0 16 0 0;
+    font-size: 0px;
+    gap: 0;
+  }
+}
