@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-import Return from '../../../svg/return';
-import Search from '../../../svg/search';
+import Return from '../../../assets/return';
+import Search from '../../../assets/search';
 import useClickOutside from '../../../helpers/useClickOutside';
 import './style.css';
 

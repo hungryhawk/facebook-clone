@@ -2,17 +2,13 @@ import LeftLink from './LeftLink';
 import React, { useState } from 'react';
 import './style.css';
 import { left } from '../../../data/left';
-import  ArrowDown  from '../../../svg/arrowDown';
-export default function LeftHome({user}) {
+import ArrowDown from '../../../assets/icons/arrowDown';
+export default function LeftHome({ user }) {
   const [visible, setVisible] = useState(false);
   return (
     <div className="left_home">
       <div className="left_link hover1">
-        <img
-          src={user.avatarUrl}
-          alt=""
-          height={20}
-        />
+        <img src={user.avatarUrl} alt="" height={20} />
         <span>{user.userName}</span>
       </div>
       {left.slice(0, 8).map((link, i) => (

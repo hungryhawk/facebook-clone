@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Search({ color }) {
+function SearchIcon({ color }) {
     return (
         <svg width="16" height="16" fill={color} viewBox="0 0 16 16">
             <g fillRule="nonzero">
@@ -25,4 +25,4 @@ function Search({ color }) {
     );
 }
 
-export default Search;
+export default SearchIcon;

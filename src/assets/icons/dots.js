@@ -1,4 +1,4 @@
-function Dots({ color }) {
+function DotsIcon({ color }) {
     return (
         <svg width="20" height="20" fill={color} viewBox="0 0 20 20">
             <path
@@ -10,4 +10,4 @@ function Dots({ color }) {
     );
 }
 
-export default Dots;
+export default DotsIcon;

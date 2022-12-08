@@ -1,4 +1,4 @@
-function Plus({ color }) {
+function PlusIcon({ color }) {
   return (
     <svg
       fill={color}
@@ -24,4 +24,4 @@ function Plus({ color }) {
   );
 }
 
-export default Plus;
+export default PlusIcon;

@@ -1,4 +1,4 @@
-function ThreeLines({ color }) {
+function ThreeLinesIcon({ color }) {
   return (
     <svg
       viewBox="0 0 28 28"
@@ -12,5 +12,5 @@ function ThreeLines({ color }) {
   );
 }
 
-export default ThreeLines;
+export default ThreeLinesIcon;
 

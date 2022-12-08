@@ -1,4 +1,4 @@
-export default function GroupPeople({color}) {
+export default function GroupPeopleIcon({color}) {
   return (
     <svg
       viewBox="0 0 28 28"

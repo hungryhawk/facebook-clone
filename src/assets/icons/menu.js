@@ -1,4 +1,4 @@
-function Menu() {
+function MenuIcon() {
     return (
         <svg width="20" height="20" viewBox="0 0 44 44">
             <circle cx="7" cy="7" r="6"></circle>
@@ -14,4 +14,4 @@ function Menu() {
     );
 }
 
-export default Menu;
+export default MenuIcon;
