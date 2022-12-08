@@ -1,8 +1,7 @@
 import './style.css';
-import React, { useRef } from 'react';
+import React from 'react';
 import Logo from '../../../svg/logo';
 import Search from '../../../svg/search';
-import useClickOutside from '../SearchMenu/useClickOutside';
 
 function HeaderLeft({ color, setShowSearchMenu }) {
 
@@ -19,7 +18,6 @@ function HeaderLeft({ color, setShowSearchMenu }) {
       <div className="search search1" onClick={() => setShowSearchMenu(true)}>
         <Search color={color} />
         <input
-          ref={menu}
           type="text"
           placeholder="Search Facebook"
           className="hide_input"

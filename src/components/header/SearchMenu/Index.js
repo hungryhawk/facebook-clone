@@ -1,21 +1,23 @@
 import { useEffect, useState, useRef } from 'react';
 import Return from '../../../svg/return';
 import Search from '../../../svg/search';
-import useClickOutside from './useClickOutside';
+import useClickOutside from '../../../helpers/useClickOutside';
 import './style.css';
 
 function SearchMenu({ setShowSearchMenu }) {
+  const menu = useRef(null);
+  useClickOutside(menu, () => {
+    setShowSearchMenu(false);
+  });
   const [iconVisible, setIconVisible] = useState(true);
   const color = 'gray';
   const input = useRef(null);
-
-  
 
   useEffect(() => {
     input.current.focus();
   }, []);
   return (
-    <div className="header_left search_area scrollbar">
+    <div className="header_left search_area scrollbar" ref={menu}>
       <div className="search_wrap">
         <div className="header_logo">
           <div
