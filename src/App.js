@@ -1,23 +1,15 @@
-import React, {useState} from 'react';
-import Header from './components/header';
-import LeftHome from './components/header/LeftHome';
-import Profile from './components/profile';
-import {user}  from './data/userInformation';
-import useFetch from './helpers/useFetch';
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './components/pages/home';
 
 function App() {
-  const info = useFetch(user);
-  const [show, setShow] = useState(false)
-
   return (
     <>
-      <Header user={info} setShow={setShow}/>
-      {show && <LeftHome user={info}/>}
-      {!show && <Profile user={info} />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
 
-export default App
-
-
+export default App;

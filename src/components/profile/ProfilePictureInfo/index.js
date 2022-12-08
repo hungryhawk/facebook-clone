@@ -2,8 +2,8 @@ import './style.css';
 import React from 'react';
 import { friends } from '../../../data/friends';
 import useFetch from '../../../helpers/useFetch';
-import BlueButton from './BlueButton';
-import GrayButton from './GrayButton';
+import BlueButton from './blueButton';
+import GrayButton from './grayButton';
 
 export default function ProfilePictureInfos({ user }) {
   const info = useFetch(friends);

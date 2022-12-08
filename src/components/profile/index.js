@@ -1,8 +1,8 @@
 import './style.css';
 import React from 'react';
 import ProfilePictureInfos from './ProfilePictureInfo';
-import ProfileMenu from './ProfileMenu';
-import Cover from './ProfileCover';
+import ProfileMenu from './profileMenu';
+import Cover from './profileCover';
 
 function Profile({ user }) {
   return (

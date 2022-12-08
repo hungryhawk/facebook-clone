@@ -1,4 +1,4 @@
-import LeftLink from './LeftLink';
+import LeftLink from './leftLink';
 import React, { useState } from 'react';
 import './style.css';
 import { left } from '../../../data/left';

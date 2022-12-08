@@ -1,9 +1,9 @@
 import './style.css';
 import React, { useState } from 'react';
-import HeaderLeft from './HeaderLeft';
-import HeaderMiddle from './HeaderMiddle';
-import HeaderRight from './HeaderRight';
-import SearchMenu from './SearchMenu';
+import HeaderLeft from './headerLeft';
+import HeaderMiddle from './headerMiddle';
+import HeaderRight from './headerRight';
+import SearchMenu from './searchMenu';
 
 export default function Header({ user, setShow }) {
   const color = 'gray';

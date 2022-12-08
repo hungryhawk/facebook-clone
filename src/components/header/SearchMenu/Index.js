@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-import Return from '../../../assets/return';
-import Search from '../../../assets/search';
+import ReturnIcon from '../../../assets/icons/return';
+import SearchIcon from '../../../assets/icons/search';
 import useClickOutside from '../../../helpers/useClickOutside';
 import './style.css';
 
@@ -24,13 +24,13 @@ function SearchMenu({ setShowSearchMenu }) {
             className="circle hover1"
             onClick={() => setShowSearchMenu(false)}
           >
-            <Return color={color} />
+            <ReturnIcon color={color} />
           </div>
         </div>
         <div className="search">
           {iconVisible && (
             <div>
-              <Search color={color} />
+              <SearchIcon color={color} />
             </div>
           )}
 
