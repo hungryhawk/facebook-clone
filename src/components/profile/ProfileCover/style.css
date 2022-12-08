@@ -1,0 +1,51 @@
+.profile_cover {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+.profile_cover img {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+.update_cover_wrapper {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.open_cover_update {
+  background: #fff;
+  padding: 7px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.profile_w_col {
+  height: 120px;
+}
+
+/* ----------------- */
+.camera_filled_icon {
+  background-image: url('../../../../public/icons/icons25.png');
+  background-position: 0px -444px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}

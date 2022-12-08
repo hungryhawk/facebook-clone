@@ -44,8 +44,8 @@ function SearchMenu({ setShowSearchMenu }) {
         </div>
       </div>
       <div className="search_history_header">
-        <span>Recent Searches</span>
-        <a>Edit</a>
+        <span>No Recent Searches</span>
+        {/* <a>Edit</a> */}
       </div>
       <div className="search_history"></div>
       <div className="search_results scrollbar"></div>

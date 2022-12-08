@@ -24,7 +24,7 @@
     border-radius: 50%;
     background-repeat: no-repeat;
     border: 2px solid white;
-    background: #e4e6eb;
+    background: #fff;
     cursor: pointer;
   }
   
@@ -36,7 +36,7 @@
     position: absolute;
     bottom: 4.5rem;
     right: 0.55rem;
-    background: #e4e6eb;
+    background: var(--bg-third);
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -78,7 +78,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    box-shadow: 0 1px 2px gray;
+    box-shadow: 0 1px 2px var(--shadow-1);
     margin-top: 10px;
     object-fit: cover;
   }
@@ -95,39 +95,8 @@
     display: inline-block;
   }
   
-  .blue_btn {
-    width: 131px;
-    border: none;
-    outline: none;
-    background: #1876f2;
-    padding: 8.5px 12px;
-    border-radius: 7px;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 14px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    cursor: pointer;
-  }
+
   
-  .gray_btn {
-    border: none;
-    outline: none;
-    background: #f0f2f5;
-    padding: 8.5px 12px;
-    border-radius: 7px;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 14px;
-    color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    cursor: pointer;
-  }
+ 
   
   /* --------------- */

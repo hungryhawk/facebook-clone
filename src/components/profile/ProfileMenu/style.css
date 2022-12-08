@@ -7,7 +7,7 @@
   
   .profile_menu {
     position: relative;
-    border-top: 1px solid #ccced2;
+    border-top: 1px solid var(--border-color);
     display: flex;
     padding: 0;
   }
@@ -22,29 +22,19 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /* padding: 0 15px; */
     margin: 3px 0;
-    color: #65676b;
+    color: var(--color-secondary);
   }
-  
-  /* .profile_menu a:nth-child(1) {
-    height: 60px;
-    width: 65px;
-    margin: 0;
-    color: rgb(107, 107, 217);
-    border-bottom: 3px solid blue;
-    border-radius: 0;
-  } */
+
   
   .p10_dots {
-    background: #e4e6eb;
+    background: var(--bg-third);
     position: absolute;
     right: 0;
     top: 10px;
     border-radius: 5px;
     display: grid;
     display: flex;
-    /* align-items: center; */
     place-items: center;
     padding: 8px 14px;
   }

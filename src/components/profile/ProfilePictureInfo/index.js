@@ -1,7 +1,9 @@
-import './style.css'
+import './style.css';
 import React from 'react';
 import { friends } from '../../../data/friends';
 import useFetch from '../../../helpers/useFetch';
+import BlueButton from './BlueButton';
+import GrayButton from './GrayButton';
 
 export default function ProfilePictureInfos({ user }) {
   const info = useFetch(friends);
@@ -43,14 +45,8 @@ export default function ProfilePictureInfos({ user }) {
       </div>
 
       <div className="profile_w_right">
-        <div className="blue_btn">
-          <img src="../../../icons/plus.png" alt="" className="invert" />
-          <span>Add to story</span>
-        </div>
-        <div className="gray_btn">
-          <i className="edit_icon" />
-          <span>Edit profile</span>
-        </div>
+        <BlueButton />
+        <GrayButton />
       </div>
     </div>
   );

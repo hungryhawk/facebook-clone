@@ -3,7 +3,6 @@
 .header_right {
     display: flex;
     align-items: center;
-    /* TODO: remove pos absolute */
     position: absolute;
     right: 8px;
     top: 50%;
@@ -19,7 +18,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 8px;
-    background: #e4e6eb;
+    background: var(--bg-third);
     cursor: pointer;
   }
 

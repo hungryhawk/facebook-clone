@@ -1,4 +1,4 @@
-
+import './style.css'
 export default function Cover({user}) {
   return (
     <div className="profile_cover">

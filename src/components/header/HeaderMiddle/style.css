@@ -20,7 +20,7 @@
 }
 
 .active {
-  border-bottom: 3px solid #1876f2;
+  border-bottom: 3px solid var(--blue-color);
   border-radius: 0 !important;
   height: 56px;
   transform: translateX(0);
@@ -38,8 +38,8 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 90px;
-  background-color: #111;
-  color: #fff;
+  background-color: black;
+  color: var(--bg-primary);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -59,17 +59,8 @@
   display: none;
 }
 
-.three {
-  display: none;
-}
+/* --------responsive header  */
 
-/* ----------------- */
-
-/* @media (max-width: 1150px) {
-  .middle_icon {
-    width: 109px;
-  }
-} */
 @media (max-width: 125q0px) {
   .header_middle {
     transform: translateX(-10%);
@@ -142,5 +133,3 @@
     display: none;
   }
 }
-
-
