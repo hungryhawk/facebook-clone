@@ -5,10 +5,7 @@ import Search from '../../../svg/search';
 import useClickOutside from '../SearchMenu/useClickOutside';
 
 function HeaderLeft({ color, setShowSearchMenu }) {
-  const menu = useRef(null);
-  useClickOutside(menu, () => {
-    setShowSearchMenu(false);
-  });
+
 
   return (
     <div className="header_left">
