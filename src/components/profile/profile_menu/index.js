@@ -1,4 +1,3 @@
-import './style.css';
 import Dots from '../../../svg/dots';
 import { useState } from 'react';
 

@@ -1,28 +1,30 @@
-import './style.css';
 import React from 'react';
-import { Avatar } from '@mui/material';
 import { friends } from '../../../data/friends';
 import useFetch from '../../../helpers/useFetch';
 
-export default function ProfilePic({ user }) {
+export default function ProfilePictureInfos({ user }) {
   const info = useFetch(friends);
 
   return (
     <div className="profile_img_wrap">
       <div className="profile_w_left">
         <div className="profile_w_img">
-          <Avatar
+          <div
             className="profile_w_bg"
-            sx={{ width: 168, height: 168 }}
-            src={user.avatarUrl}
-          />
+            style={{
+              backgroundSize: 'cover',
+              backgroundImage: `url(${user.avatarUrl})`,
+              backgroundPosition: '-70px 3px',
+            }}
+          ></div>
+
           <div className="profile_circle hover1">
             <i className="camera_filled_icon"></i>
           </div>
         </div>
         <div className="profile_w_col">
           <div className="profile_name">{user.userName}</div>
-          <div className="profile_friends">{info.length} Friends</div>
+          <div className="profile_friends_count">{info.length} Friends</div>
           <div className="profile_friend_imgs">
             {info.map((pic, i) => (
               <img
