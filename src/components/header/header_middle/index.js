@@ -5,6 +5,7 @@ import Friends from '../../../svg/friends'
 import Watch from '../../../svg/watch'
 import Market from '../../../svg/market'
 import GroupPeople from '../../../svg/groupPeople'
+import ThreeLines from '../../../svg/threelines'
 
 
 function HeaderMiddle({ color }) {
@@ -14,6 +15,7 @@ function HeaderMiddle({ color }) {
     { name: <Watch color={color} />, id: 3, tooltip: 'Watch' },
     { name: <Market color={color} />, id: 4, tooltip: 'Marketplace' },
     { name: <GroupPeople color={color} />, id: 5, tooltip: 'Groups' },
+    { name: <ThreeLines color={color} />, id: 6, tooltip: 'Menu' },
   ];
 
   const [selected, setSelected] = useState();

@@ -4,11 +4,15 @@ import { Avatar } from '@mui/material';
 import Menu from '../../../svg/menu';
 import Messenger from '../../../svg/messenger';
 import Notifications from '../../../svg/notifications';
+import Plus from '../../../svg/plus';
 
 function HeaderRight({user}) {
 
   return (
     <div className="header_right">
+       <div className="circle_icon hover1">
+        <Plus />
+      </div>
       <div className="circle_icon hover1">
         <Menu />
       </div>

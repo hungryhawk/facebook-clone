@@ -1,58 +1,140 @@
 /* стили ждя header middle  */
 
 .header_middle {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    transform: translateX(3px);
-  }
-  
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: translateX(3px);
+}
+
+.middle_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translateX(-2px);
+}
+
+.active {
+  border-bottom: 3px solid #1876f2;
+  border-radius: 0 !important;
+  height: 56px;
+  transform: translateX(0);
+}
+
+/* ------------------- */
+
+/* tooltip */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  opacity: 0.8;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1;
+  bottom: -44px;
+  left: -30px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.middle_icon:nth-child(6) {
+  display: none;
+}
+
+/* ----------------- */
+
+
+/* @media (max-width: 1150px) {
   .middle_icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
-    height: 50px;
-    border-radius: 10px;
-    cursor: pointer;
-    transform: translateX(-2px);
+    width: 109px;
   }
-  
-  .active {
-    border-bottom: 3px solid #1876f2;
-    border-radius: 0 !important;
-    height: 56px;
-    transform: translateX(0);
+} */
+@media (max-width: 125q0px) {
+  .header_middle{
+    transform: translateX(-10%)
   }
-  
-  /* ------------------- */
-  
-  /* tooltip */
-  
-  .tooltip {
-    position: relative;
-    display: inline-block;
+}
+@media (max-width: 1050px) {
+  .middle_icon {
+    width: 100px;
   }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
+}
+@media (max-width: 1000px) {
+  .middle_icon {
     width: 90px;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    opacity: 0.8;
-    font-size: 16px;
-    position: absolute;
-    z-index: 1;
-    bottom: -44px;
-    left: -30px;
   }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
+}
+@media (max-width: 950px) {
+  .middle_icon {
+    width: 80px;
   }
-  
-  /* ----------------- */
+}
+@media (max-width: 900px) {
+  .middle_icon {
+    width: 70px;
+  }
+}
+@media (max-width: 850px) {
+  .middle_icon {
+    width: 65px;
+  }
+}
+@media (max-width: 800px) {
+  .middle_icon {
+    width: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .middle_icon {
+    width: 55px;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .middle_icon:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .middle_icon:nth-child(6) {
+    display: flex;
+  }
+}
+
+@media (max-width: 710px) {
+  .middle_icon:nth-child(1) {
+    display: none;
+  }
+  .middle_icon:nth-child(2) {
+    display: none;
+  }
+  .middle_icon:nth-child(3) {
+    display: none;
+  }
+  .middle_icon:nth-child(4) {
+    display: none;
+  }
+  .middle_icon:nth-child(5) {
+    /* чтототнужно сделать чтобы пациент переметнулся к левому краю */
+  }
+}
