@@ -98,7 +98,6 @@
   }
 }
 
-
 @media (max-width: 1100px) {
   .middle_icon:nth-child(5) {
     display: none;
@@ -123,5 +122,14 @@
   }
   .middle_icon:nth-child(4) {
     display: none;
+  }
+}
+
+@media (max-width: 710px) {
+  .header_middle {
+    position: fixed;
+  }
+  .middle_icon:nth-child(6) {
+    left: 135px;
   }
 }
