@@ -14,7 +14,12 @@ function HeaderMiddle({ color, setShow }) {
     { name: <WatchIcon color={color} />, id: 3, tooltip: 'Watch' },
     { name: <MarketIcon color={color} />, id: 4, tooltip: 'Marketplace' },
     { name: <GroupPeopleIcon color={color} />, id: 5, tooltip: 'Groups' },
-    { name: <ThreeLinesIcon color={color} />, id: 6, tooltip: 'Menu' },
+    {
+      name: <ThreeLinesIcon color={color} />,
+      id: 6,
+      tooltip: 'Menu',
+      open: true,
+    },
   ];
 
   const [selected, setSelected] = useState(false);
@@ -28,9 +33,11 @@ function HeaderMiddle({ color, setShow }) {
           }`}
           onClick={() => setSelected(icon.id)}
         >
-          <div class="tooltip">
-            <span class="tooltiptext">{icon.tooltip}</span>
-            {icon.name}
+          <div onClick={() => setShow(icon.id === 6)}>
+            <div class="tooltip">
+              <span class="tooltiptext">{icon.tooltip}</span>
+              {icon.name}
+            </div>
           </div>
         </div>
       ))}

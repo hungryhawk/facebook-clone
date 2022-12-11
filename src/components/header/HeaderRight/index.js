@@ -5,19 +5,13 @@ import MessengerIcon from '../../../assets/icons/messenger';
 import NotificationsIcon from '../../../assets/icons/notifications';
 import PlusIcon from '../../../assets/icons/plus';
 
-function HeaderRight({ user, setShow }) {
+function HeaderRight({ user }) {
   return (
     <div className="header_right">
-      <div
-        className="circle_icon hover1"
-        onClick={() => setShow((prev) => !prev)}
-      >
+      <div className="circle_icon hover1">
         <PlusIcon />
       </div>
-      <div
-        className="circle_icon hover1"
-        onClick={() => setShow((prev) => !prev)}
-      >
+      <div className="circle_icon hover1">
         <MenuIcon />
       </div>
       <div className="circle_icon hover1">
