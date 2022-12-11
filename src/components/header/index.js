@@ -5,7 +5,7 @@ import HeaderMiddle from './headerMiddle';
 import HeaderRight from './headerRight';
 import SearchMenu from './searchMenu';
 
-export default function Header({ user, setShow }) {
+export default function Header({ user, setShow, show }) {
   const color = 'gray';
   const [showSearchMenu, setShowSearchMenu] = useState(false);
 
@@ -13,7 +13,7 @@ export default function Header({ user, setShow }) {
     <header>
       <HeaderLeft color={color} setShowSearchMenu={setShowSearchMenu} />
       {showSearchMenu && <SearchMenu setShowSearchMenu={setShowSearchMenu} />}
-      <HeaderMiddle color={color} setShow={setShow}/>
+      <HeaderMiddle color={color} setShow={setShow} show={show}/>
       <HeaderRight user={user} setShow={setShow} />
     </header>
   );

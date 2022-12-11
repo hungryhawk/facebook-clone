@@ -10,7 +10,7 @@ export default function Home() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <Header user={info} setShow={setShow} />
+      <Header user={info} setShow={setShow} show={show} />
       {show && <LeftHome user={info} />}
       {!show && <Profile user={info} />}
     </>

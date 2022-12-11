@@ -7,7 +7,7 @@ import MarketIcon from '../../../assets/icons/market';
 import GroupPeopleIcon from '../../../assets/icons/groupPeople';
 import ThreeLinesIcon from '../../../assets/icons/threelines';
 
-function HeaderMiddle({ color, setShow }) {
+function HeaderMiddle({ color, setShow, show}) {
   const icons = [
     { name: <HomeActiveIcon />, id: 1, tooltip: 'Home' },
     { name: <FriendsIcon color={color} />, id: 2, tooltip: 'Friends' },
@@ -18,7 +18,6 @@ function HeaderMiddle({ color, setShow }) {
       name: <ThreeLinesIcon color={color} />,
       id: 6,
       tooltip: 'Menu',
-      open: true,
     },
   ];
 
@@ -33,7 +32,7 @@ function HeaderMiddle({ color, setShow }) {
           }`}
           onClick={() => setSelected(icon.id)}
         >
-          <div onClick={() => setShow(icon.id === 6)}>
+          <div onClick={() => setShow(icon.id === 6 ? !show : show)}>
             <div class="tooltip">
               <span class="tooltiptext">{icon.tooltip}</span>
               {icon.name}
