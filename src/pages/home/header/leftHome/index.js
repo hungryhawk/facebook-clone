@@ -1,8 +1,8 @@
 import LeftLink from './leftLink';
 import React, { useState } from 'react';
 import './style.css';
-import { left } from '../../../data/left';
-import ArrowDown from '../../../assets/icons/arrowDown';
+import { left } from '../../../../data/left';
+import ArrowDown from '../../../../assets/icons/arrowDown';
 export default function LeftHome({ user }) {
   const [visible, setVisible] = useState(false);
   return (

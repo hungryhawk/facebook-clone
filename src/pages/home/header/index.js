@@ -13,7 +13,7 @@ export default function Header({ user, setShow, show }) {
     <header>
       <HeaderLeft color={color} setShowSearchMenu={setShowSearchMenu} />
       {showSearchMenu && <SearchMenu setShowSearchMenu={setShowSearchMenu} />}
-      <HeaderMiddle color={color} setShow={setShow} show={show}/>
+      <HeaderMiddle color={color} setShow={setShow} show={show} />
       <HeaderRight user={user} setShow={setShow} />
     </header>
   );

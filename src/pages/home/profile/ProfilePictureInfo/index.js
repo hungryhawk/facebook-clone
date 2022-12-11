@@ -1,7 +1,7 @@
 import './style.css';
 import React from 'react';
-import { friends } from '../../../data/friends';
-import useFetch from '../../../helpers/useFetch';
+import { friends } from '../../../../data/friends';
+import useFetch from '../../../../helpers/useFetch';
 import BlueButton from './blueButton';
 import GrayButton from './grayButton';
 

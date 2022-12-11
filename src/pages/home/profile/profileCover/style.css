@@ -41,7 +41,7 @@
 
 /* ----------------- */
 .camera_filled_icon {
-  background-image: url('../../../../public/icons/icons25.png');
+  background-image: url('../../../../../public/icons/icons25.png');
   background-position: 0px -444px;
   background-size: auto;
   width: 20px;

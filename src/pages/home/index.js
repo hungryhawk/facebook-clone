@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header from '../../components/header';
-import LeftHome from '../../components/header/leftHome';
-import Profile from '../../components/profile';
+import Header from '../home/header';
+import LeftHome from '../home/header/leftHome';
+import Profile from '../home/profile';
 import { user } from '../../data/userInformation';
 import useFetch from '../../helpers/useFetch';
 
