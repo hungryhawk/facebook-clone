@@ -26,7 +26,7 @@ export default function ProfileMenu() {
           </a>
         ))}
 
-        <div className="p10_dots hover1">
+        <div className="profile_dots hover1">
           <Dots />
         </div>
       </div>

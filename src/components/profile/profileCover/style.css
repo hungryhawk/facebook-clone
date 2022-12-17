@@ -23,7 +23,7 @@
 }
 
 .open_cover_update {
-  background: #fff;
+  background: var(--bg-primary);
   padding: 7px 15px;
   display: flex;
   align-items: center;

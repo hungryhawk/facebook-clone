@@ -13,7 +13,7 @@ function HeaderLeft({ color, setShowSearchMenu }) {
         </div>
       </div>
       {/* TODO: remove class search 1 */}
-      <div className="search search1" onClick={() => setShowSearchMenu(true)}>
+      <div className="search searchSmall" onClick={() => setShowSearchMenu(true)}>
         <SearchIcon color={color} />
         <input
           type="text"

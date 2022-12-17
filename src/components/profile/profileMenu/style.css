@@ -27,7 +27,7 @@
   }
 
   
-  .p10_dots {
+  .profile_dots {
     background: var(--bg-third);
     position: absolute;
     right: 0;
@@ -39,7 +39,7 @@
     padding: 8px 14px;
   }
   
-  .p10_dots svg {
+  .profile_dots svg {
     width: 16px;
     height: 16px;
     margin-top: 2px;
