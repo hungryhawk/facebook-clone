@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
+import getUser from '../api/getUser';
 
-export default function useFetch(data) {
-  const [info, setInfo] = useState([]);
+export default function useFetch() {
+  const [infoUser, setInfoUser] = useState([]);
   useEffect(() => {
-    setTimeout(() => {
-      setInfo(data);
-    }, 2000);
+    getUser().then((dataUser) => setInfoUser(dataUser));
   }, []);
-  return info;
+
+  return infoUser;
 }

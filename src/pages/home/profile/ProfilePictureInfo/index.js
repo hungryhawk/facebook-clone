@@ -1,12 +1,11 @@
 import './style.css';
 import React from 'react';
-import { friends } from '../../../../data/friends';
-import useFetch from '../../../../hooks/useFetch';
+import useFetchFriends from '../../../../hooks/useFetchFriends';
 import BlueButton from './blueButton';
 import GrayButton from './grayButton';
 
 export default function ProfilePictureInfos({ user }) {
-  const info = useFetch(friends);
+  const infoFriends = useFetchFriends();
 
   return (
     <div className="profile_img_wrap">
@@ -27,9 +26,11 @@ export default function ProfilePictureInfos({ user }) {
         </div>
         <div className="profile_w_col">
           <div className="profile_name">{user.userName}</div>
-          <div className="profile_friends_count">{info.length} Friends</div>
+          <div className="profile_friends_count">
+            {infoFriends.length} Friends
+          </div>
           <div className="profile_friend_imgs">
-            {info.map((pic, i) => (
+            {infoFriends.map((pic, i) => (
               <img
                 src={pic.photo}
                 key={i.id}
