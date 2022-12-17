@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
-import ReturnIcon from '../../../../assets/icons/return';
-import SearchIcon from '../../../../assets/icons/search';
-import useClickOutside from '../../../../hooks/useClickOutside';
+import ReturnIcon from '../../../assets/icons/return';
+import SearchIcon from '../../../assets/icons/search';
+import useClickOutside from '../../../hooks/useClickOutside';
 import './style.css';
 
 function SearchMenu({ setShowSearchMenu }) {

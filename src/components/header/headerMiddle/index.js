@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './style.css';
-import HomeActiveIcon from '../../../../assets/icons/homeActive';
-import FriendsIcon from '../../../../assets/icons/friends';
-import WatchIcon from '../../../../assets/icons/watch';
-import MarketIcon from '../../../../assets/icons/market';
-import GroupPeopleIcon from '../../../../assets/icons/groupPeople';
-import ThreeLinesIcon from '../../../../assets/icons/threelines';
+import HomeActiveIcon from '../../../assets/icons/homeActive';
+import FriendsIcon from '../../../assets/icons/friends';
+import WatchIcon from '../../../assets/icons/watch';
+import MarketIcon from '../../../assets/icons/market';
+import GroupPeopleIcon from '../../../assets/icons/groupPeople';
+import ThreeLinesIcon from '../../../assets/icons/threelines';
 
 function HeaderMiddle({ color, setShow, show}) {
   const icons = [

@@ -1,7 +1,7 @@
 import './style.css';
 import React from 'react';
-import Logo from '../../../../assets/icons/logo';
-import SearchIcon from '../../../../assets/icons/search';
+import Logo from '../../../assets/icons/logo';
+import SearchIcon from '../../../assets/icons/search';
 
 function HeaderLeft({ color, setShowSearchMenu }) {
   return (

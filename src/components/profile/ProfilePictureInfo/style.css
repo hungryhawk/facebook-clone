@@ -86,7 +86,7 @@
   /* ----------------- */
   
   .edit_icon {
-    background-image: url('../../../../../public/icons/icons18.png');
+    background-image: url('../../../../public/icons/icons18.png');
     background-position: -34px -109px;
     background-size: auto;
     width: 16px;

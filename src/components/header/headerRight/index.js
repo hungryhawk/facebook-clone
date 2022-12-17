@@ -1,9 +1,9 @@
 import './style.css';
 import React from 'react';
-import MenuIcon from '../../../../assets/icons/menu';
-import MessengerIcon from '../../../../assets/icons/messenger';
-import NotificationsIcon from '../../../../assets/icons/notifications';
-import PlusIcon from '../../../../assets/icons/plus';
+import MenuIcon from '../../../assets/icons/menu';
+import MessengerIcon from '../../../assets/icons/messenger';
+import NotificationsIcon from '../../../assets/icons/notifications';
+import PlusIcon from '../../../assets/icons/plus';
 
 function HeaderRight({ user }) {
   return (

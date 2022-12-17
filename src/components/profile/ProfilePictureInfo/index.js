@@ -1,6 +1,6 @@
 import './style.css';
 import React from 'react';
-import useFetchFriends from '../../../../hooks/useFetchFriends';
+import useFetchFriends from '../../../hooks/useFetchFriends';
 import BlueButton from './blueButton';
 import GrayButton from './grayButton';
 
